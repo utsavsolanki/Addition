@@ -1,13 +1,13 @@
 package unitTestCases;
 
+import static org.testng.AssertJUnit.assertEquals;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import java.io.File;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import static org.junit.Assert.assertEquals;
 import java.util.List;
-import org.junit.After;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,7 +44,7 @@ public class CountLink {
 
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() {
 		driver.close();
 		driver.quit();

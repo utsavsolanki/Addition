@@ -1,35 +1,31 @@
 package unitTestCases;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import classes.*;
-
-
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Ignore;
-import org.junit.Test;
 
 public class MathUnitTest 
 {
 
-	@Test
+	@Test(priority=1)
 	public void testAdd() {
 		addoperation ao = new addoperation();
-		assertEquals(10, ao.Add(5, 5));
+		AssertJUnit.assertEquals(10, ao.Add(5, 5));
 	}
 
-	@Deprecated
-	@Test
+
+	@Test(priority=3)
 	public void testSubtract() {
 		addoperation ao = new addoperation();
-		assertEquals(1, ao.Subtract(5, 4));
+		AssertJUnit.assertEquals(1, ao.Subtract(5, 4));
 	}
 
-	@Test
+	@Test(priority=2)
 	public void testMul() {
 		addoperation ao = new addoperation();
-		assertEquals(25, ao.mul(5, 5));
+		AssertJUnit.assertEquals(25, ao.mul(5, 5));
 	}
 
-	@Ignore
+	@Test(enabled = false)
 	public void Message() {
 		System.out.println("This is print message");
 

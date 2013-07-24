@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="none">
+	<test name="Test(failed)" parallel="none">
+		<classes>
+			<class name="unitTestCases.MathUnitTest">
+				<methods>
+					<include name="testSubtract" />
+				</methods>
+			</class> <!-- unitTestCases.MathUnitTest -->
+			<class name="unitTestCases.CountLink">
+				<methods>
+					<include name="countLink" />
+					<include name="tearDown" />
+				</methods>
+			</class> <!-- unitTestCases.CountLink -->
+			<class name="unitTestCases.popupWindow">
+				<methods>
+					<include name="PopupWindow" />
+				</methods>
+			</class> <!-- unitTestCases.popupWindow -->
+		</classes>
+	</test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
